@@ -1,0 +1,8 @@
+* text=auto
+*.md text eol=lf
+*.ex text eol=lf
+*.exs text eol=lf
+*.heex text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.json text eol=lf
