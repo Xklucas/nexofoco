@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoFoco · Estatísticas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <!-- Barra lateral: igual em todas as páginas, muda só o item marcado com a classe active -->
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html" aria-label="NexoFoco, início"><span class="brand-symbol"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 26V10h5l10 16V10h5v16h-5L13 10v16" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><circle cx="29" cy="6" r="2.5" fill="#eda77e"/></svg></span><span>Nexo<span class="brand-focus">Foco</span><span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegação principal">
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Visão geral</span></a>
+        <a class="nav-item" href="salas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Minhas salas</span><span class="nav-count">3</span></a>
+        <a class="nav-item" href="historico.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.7-6.4L3 8m0-5v5h5m4-1v5l3 2"/></svg><span>Histórico</span></a>
+        <a class="nav-item active" href="estatisticas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></svg><span>Estatísticas</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="nav-item" href="configuracoes.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg><span>Configurações</span></a>
+        <button class="nav-item" id="botao-ajuda"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4m0 3h.01"/></svg><span>Ajuda e sobre</span></button>
+        <div class="sidebar-profile">
+          <span class="avatar green perfil-avatar">LG</span>
+          <div><strong class="perfil-nome">Lucas Góes</strong></div>
+          <a class="icon-btn" href="index.html" aria-label="Sair da conta"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H4V3h5m5 5 4 4-4 4m-6-4h12"/></svg></a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          <button class="icon-btn mobile-menu" id="botao-menu" aria-label="Abrir navegação"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+        <div class="topbar-right">
+          <a href="configuracoes.html" class="profile-link" aria-label="Meu perfil"><span class="avatar small green perfil-avatar">LG</span></a>
+        </div>
+      </header>
+
+      <main class="main-content" id="conteudo" tabindex="-1">
+        <!-- scripts: -->
+        <div class="page-heading"><div><h1>Estatísticas</h1></div></div>
+
+        <div class="total-focus-banner"><span class="icon-tile green"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3S3 3 3 14a7 7 0 0 0 12 4c5-5 5-15 5-15ZM4 21 15 10"/></svg></span><div><span>Tempo total de foco</span><strong>17h 00min</strong></div></div>
+
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-label"><span>Foco nesta semana</span><span class="icon-tile green"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></div><strong class="stat-value">11h 20min</strong></article>
+          <article class="stat-card"><div class="stat-label"><span>Sessões</span><span class="icon-tile purple"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 3 6 3 3 4v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15"/></svg></span></div><strong class="stat-value">9</strong></article>
+          <article class="stat-card"><div class="stat-label"><span>Metas concluídas</span><span class="icon-tile peach"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></div><strong class="stat-value">15<small> / 18</small></strong></article>
+          <article class="stat-card"><div class="stat-label"><span>Taxa de conclusão</span><span class="icon-tile yellow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c0 5-5 5-5 9a5 5 0 0 0 10 0c0-2-1-3-2-4 0 3-2 3-2 3s1-5-1-8Z"/></svg></span></div><strong class="stat-value">83<small>%</small></strong></article>
+        </div>
+
+        <div class="dashboard-bottom">
+          <section class="panel week-panel">
+            <div class="section-heading"><h2>Últimos 7 dias</h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></svg></div>
+            <div class="weekly-chart">
+              <div class="chart-column"><span class="chart-amount">1h 30min</span><div class="bar-track"><div class="chart-bar" style="height: 60%"></div></div><span>seg</span></div>
+              <div class="chart-column"><span class="chart-amount">2h 30min</span><div class="bar-track"><div class="chart-bar" style="height: 100%"></div></div><span>ter</span></div>
+              <div class="chart-column"><span class="chart-amount">1h 40min</span><div class="bar-track"><div class="chart-bar" style="height: 67%"></div></div><span>qua</span></div>
+              <div class="chart-column"><span class="chart-amount">1h 30min</span><div class="bar-track"><div class="chart-bar" style="height: 60%"></div></div><span>qui</span></div>
+              <div class="chart-column"><span class="chart-amount">2h 30min</span><div class="bar-track"><div class="chart-bar" style="height: 100%"></div></div><span>sex</span></div>
+              <div class="chart-column"><span class="chart-amount">1h 40min</span><div class="bar-track"><div class="chart-bar" style="height: 67%"></div></div><span>sáb</span></div>
+              <div class="chart-column today"><span class="chart-amount">—</span><div class="bar-track"><div class="chart-bar" style="height: 3%"></div></div><span>dom</span></div>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="section-heading"><h2>Foco por tema</h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 3 6 3 3 4v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15"/></svg></div>
+            <!-- A largura de cada barra é a parte daquele tema no tempo total de foco (17h) -->
+            <div class="subject-stat"><div><span><i class="dot green"></i>Computação</span><strong>7h 30min</strong></div><div class="progress-track"><div style="width: 44%"></div></div></div>
+            <div class="subject-stat"><div><span><i class="dot purple"></i>Matemática</span><strong>5h 00min</strong></div><div class="progress-track"><div style="width: 29%"></div></div></div>
+            <div class="subject-stat"><div><span><i class="dot peach"></i>Leitura</span><strong>4h 30min</strong></div><div class="progress-track"><div style="width: 26%"></div></div></div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="section-heading"><h2>Foco por sala</h2><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="subject-stat"><div><span><i class="dot green"></i>Estruturas de Dados</span><strong>7h 30min · 3 sessões</strong></div><div class="progress-track"><div style="width: 44%"></div></div></div>
+          <div class="subject-stat"><div><span><i class="dot purple"></i>Revisão de Cálculo II</span><strong>5h 00min · 3 sessões</strong></div><div class="progress-track"><div style="width: 29%"></div></div></div>
+          <div class="subject-stat"><div><span><i class="dot peach"></i>Leitura &amp; café</span><strong>4h 30min · 3 sessões</strong></div><div class="progress-track"><div style="width: 26%"></div></div></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Janela "Ajuda e sobre": aparece quando comum.js remove a classe escondido -->
+  <div class="modal escondido" id="modal-ajuda">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Como funciona</h2>
+        <button class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+      </div>
+      <ol class="help-steps">
+        <li>Crie uma sala e defina os tempos.</li>
+        <li>Compartilhe o código com o grupo.</li>
+        <li>Adicione metas e marque que está pronto.</li>
+        <li>Consulte o resumo ao final.</li>
+      </ol>
+      <p class="muted">Projeto acadêmico INF321<br>Otávio Silva Bitencourt · Mateus José Dias · Lucas Carvalho de Góes</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline fechar-modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/comum.js"></script>
+</body>
+</html>
