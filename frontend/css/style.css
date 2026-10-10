@@ -2797,3 +2797,1459 @@ input[type=number]::-webkit-inner-spin-button{
   color:#b1b9a4;
   font-size:9px
 }
+
+/* ==================== Responsividade: ajustes por largura de tela ==================== */
+
+@media(min-width:1600px){
+  .main-content{
+    padding-top:45px;
+    padding-bottom:50px;
+    gap:30px
+  }
+  .hero-card{
+    min-height:305px
+  }
+  .hero-card>.focus-art{
+    width:44%
+  }
+  .hero-copy h2{
+    font-size:37px
+  }
+  .stat-card{
+    padding:23px
+  }
+  .stat-value{
+    font-size:30px
+  }
+  .room-card{
+    padding-top:24px
+  }
+  .room-card h3{
+    font-size:15px
+  }
+  .sidebar{
+    width:250px;
+    padding-top:36px
+  }
+  .workspace{
+    margin-left:250px;
+    width:calc(100% - 250px)
+  }
+}
+@media(max-width:1190px){
+  .sidebar{
+    width:205px;
+    padding:27px 14px 16px
+  }
+  .workspace{
+    margin-left:205px;
+    width:calc(100% - 205px)
+  }
+  .sidebar .brand{
+    font-size:21px;
+    gap:5px;
+    margin-left:5px
+  }
+  .topbar{
+    padding:0 26px
+  }
+  .main-content{
+    padding:29px 26px;
+    gap:22px
+  }
+  .footer{
+    padding:17px 26px
+  }
+  .hero-card{
+    padding:26px 24px;
+    min-height:285px
+  }
+  .hero-card>.focus-art{
+    width:46%;
+    right:-22px;
+    top:49px
+  }
+  .hero-copy h2{
+    font-size:30px
+  }
+  .hero-copy p{
+    font-size:10px
+  }
+  .join-card{
+    padding:23px 20px
+  }
+  .join-card h2{
+    font-size:19px
+  }
+  .welcome-tag{
+    display:none
+  }
+  .stats-grid{
+    gap:11px
+  }
+  .stat-card{
+    padding:17px 15px
+  }
+  .stat-label{
+    font-size:9px
+  }
+  .stat-value{
+    font-size:25px
+  }
+  .stat-card>p{
+    font-size:8px
+  }
+  .rooms-grid{
+    gap:12px
+  }
+  .room-card{
+    padding:17px 15px 0
+  }
+  .room-config{
+    gap:8px;
+    font-size:8px
+  }
+  .room-card h3{
+    font-size:12px
+  }
+  .dashboard-bottom{
+    gap:13px
+  }
+  .dashboard-bottom .panel{
+    padding:19px 17px
+  }
+  .section-heading h2{
+    font-size:14px
+  }
+  .session-goals{
+    font-size:8px;
+    padding:3px 5px
+  }
+  .session-row{
+    gap:8px
+  }
+  .weekly-chart{
+    gap:9px
+  }
+  .header-date{
+    font-size:9px
+  }
+  .header-date .icon{
+    display:none
+  }
+  .topbar-right{
+    gap:12px
+  }
+  .live-layout{
+    grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr)
+  }
+  .timer-panel{
+    padding:22px;
+    min-height:592px
+  }
+  .timer-ring{
+    width:min(100%,290px)
+  }
+  .timer-center strong{
+    font-size:59px
+  }
+  .connection-label{
+    font-size:7px
+  }
+  .create-grid{
+    grid-template-columns:minmax(0,1.3fr) minmax(255px,1fr);
+    gap:18px
+  }
+  .form-panel{
+    padding:23px
+  }
+  .preset-grid{
+    gap:5px
+  }
+  .preset{
+    padding:12px 9px
+  }
+  .preset small{
+    font-size:8px
+  }
+  .preview-panel{
+    padding:23px
+  }
+  .lobby-layout{
+    grid-template-columns:minmax(0,1.3fr) minmax(270px,1fr);
+    gap:17px
+  }
+  .participants-panel,.goals-panel{
+    padding:21px
+  }
+  .lobby-start{
+    gap:10px
+  }
+  .lobby-start>.btn{
+    font-size:10px
+  }
+  .settings-layout{
+    grid-template-columns:minmax(0,1.2fr) minmax(270px,1fr);
+    gap:18px
+  }
+  .access-story{
+    padding:30px
+  }
+  .access-story-content h1{
+    font-size:61px
+  }
+  .access-art{
+    width:87%
+  }
+  .floating-study{
+    font-size:9px;
+    right:-10px;
+    bottom:38px;
+    padding:9px 12px
+  }
+  .access-form-inner{
+    max-width:330px
+  }
+}
+@media(max-width:960px){
+  .header-date{
+    display:none
+  }
+  .dashboard-actions{
+    grid-template-columns:1.65fr 1fr;
+    gap:14px
+  }
+  .hero-card{
+    padding:24px 21px;
+    min-height:287px
+  }
+  .hero-copy h2{
+    font-size:28px
+  }
+  .hero-card>.focus-art{
+    width:50%;
+    top:105px;
+    right:-26px;
+    opacity:.9
+  }
+  .hero-copy p{
+    max-width:190px
+  }
+  .hero-footnote{
+    font-size:8px;
+    max-width:190px
+  }
+  .join-card{
+    padding:22px 16px
+  }
+  .join-card h2{
+    font-size:17px
+  }
+  .join-card>p{
+    font-size:10px
+  }
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr)
+  }
+  .stat-value{
+    font-size:27px
+  }
+  .stat-card>p{
+    font-size:9px
+  }
+  .stat-label{
+    font-size:10px
+  }
+  .rooms-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .dashboard-bottom{
+    grid-template-columns:1fr
+  }
+  .dashboard-bottom .panel{
+    padding:21px
+  }
+  .dashboard-bottom .section-heading h2{
+    font-size:15px
+  }
+  .session-info strong{
+    font-size:12px
+  }
+  .session-goals{
+    font-size:10px
+  }
+  .weekly-chart{
+    gap:25px;
+    padding-left:20px;
+    padding-right:20px
+  }
+  .bar-track{
+    height:100px
+  }
+  .main-content{
+    gap:23px
+  }
+  .create-grid,.lobby-layout,.live-layout,.summary-layout,.settings-layout{
+    grid-template-columns:1fr
+  }
+  .preview-panel{
+    position:static
+  }
+  .create-preview{
+    max-width:100%
+  }
+  .preview-orbit{
+    min-height:150px
+  }
+  .timer-panel{
+    min-height:580px
+  }
+  .timer-ring{
+    width:300px
+  }
+  .timer-center strong{
+    font-size:65px
+  }
+  .timer-panel>h2{
+    font-size:27px
+  }
+  .timer-top{
+    flex-wrap:nowrap
+  }
+  .connection-label{
+    font-size:9px
+  }
+  .live-aside{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px
+  }
+  .live-aside .panel{
+    padding:18px
+  }
+  .live-aside .section-heading h2{
+    font-size:13px
+  }
+  .live-aside .person-row{
+    gap:7px
+  }
+  .live-aside .person-details strong{
+    font-size:10px
+  }
+  .live-aside .person-row>.badge{
+    font-size:7px;
+    padding:3px 5px
+  }
+  .activity-panel{
+    grid-column:1/-1
+  }
+  .access-story-content h1{
+    font-size:52px
+  }
+  .access-story-content>.eyebrow{
+    font-size:7px
+  }
+  .access-story-content>p{
+    font-size:11px
+  }
+  .access-form{
+    padding:35px 15px
+  }
+  .access-form-inner>h2{
+    font-size:27px
+  }
+  .access-form-inner>p{
+    font-size:10px
+  }
+  .access-story{
+    padding:27px
+  }
+  .access-art{
+    width:100%
+  }
+  .floating-study{
+    right:1px;
+    font-size:8px;
+    bottom:35px
+  }
+  .floating-time{
+    font-size:17px;
+    margin-left:5px
+  }
+  .access-footer{
+    font-size:8px;
+    gap:6px
+  }
+  .access-footer .avatar{
+    width:25px;
+    height:25px;
+    font-size:8px
+  }
+  .access-copyright{
+    font-size:8px
+  }
+}
+@media(max-width:760px){
+  .sidebar{
+    transform:translateX(-100%);
+    transition:transform .2s;
+    width:232px;
+    box-shadow:12px 0 30px #20301b10
+  }
+  .sidebar.open{
+    transform:translateX(0)
+  }
+  .workspace{
+    margin-left:0;
+    width:100%
+  }
+  .mobile-menu{
+    display:flex;
+    margin-left:-9px
+  }
+  .topbar{
+    height:64px;
+    min-height:64px;
+    padding:0 23px
+  }
+  .breadcrumbs{
+    gap:7px
+  }
+  .breadcrumbs>span{
+    font-size:10px
+  }
+  .breadcrumbs>strong{
+    font-size:10px
+  }
+  .main-content{
+    padding:25px 23px 30px;
+    max-width:700px
+  }
+  .footer{
+    padding:17px 23px
+  }
+  .page-heading{
+    align-items:flex-start
+  }
+  h1{
+    font-size:33px
+  }
+  .page-heading p{
+    font-size:11px
+  }
+  .page-heading>.btn{
+    font-size:10px;
+    padding:9px 12px;
+    min-height:38px
+  }
+  .dashboard-actions{
+    grid-template-columns:1.7fr 1fr
+  }
+  .hero-copy h2{
+    font-size:31px
+  }
+  .hero-card>.focus-art{
+    width:47%;
+    top:105px;
+    right:-19px
+  }
+  .hero-card{
+    padding:25px 23px
+  }
+  .join-card{
+    padding:22px 18px
+  }
+  .join-card h2{
+    font-size:19px
+  }
+  .hero-copy .eyebrow{
+    font-size:7px
+  }
+  .hero-copy p{
+    font-size:11px
+  }
+  .hero-copy .btn{
+    margin-top:19px
+  }
+  .hero-footnote{
+    font-size:8px;
+    margin-top:20px
+  }
+  .rooms-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+  .room-card h3{
+    font-size:14px
+  }
+  .room-config{
+    font-size:10px;
+    gap:16px
+  }
+  .room-subject{
+    font-size:11px
+  }
+  .room-card-top .badge{
+    font-size:9px
+  }
+  .room-card-footer .avatar{
+    width:28px;
+    height:28px;
+    font-size:9px
+  }
+  .room-card-footer .avatar-stack>span:last-child:not(.avatar){
+    font-size:9px
+  }
+  .stat-label{
+    font-size:11px
+  }
+  .stat-card>p{
+    font-size:9px
+  }
+  .stat-card{
+    padding:20px
+  }
+  .section-heading h2{
+    font-size:16px
+  }
+  .main-content>.back-link{
+    margin-top:1px
+  }
+  .access-page{
+    padding:10px;
+    gap:10px
+  }
+  .access-story{
+    padding:23px 20px
+  }
+  .access-story-content h1{
+    font-size:45px;
+    letter-spacing:-2px
+  }
+  .access-story-content>p{
+    font-size:10px
+  }
+  .access-story>.brand{
+    font-size:23px
+  }
+  .access-form-inner>h2{
+    font-size:25px
+  }
+  .access-story-content>.eyebrow{
+    font-size:6px;
+    letter-spacing:1.2px
+  }
+  .access-form-inner>p{
+    font-size:9px
+  }
+  .access-art{
+    margin-top:30px
+  }
+  .floating-study{
+    font-size:7px;
+    padding:8px;
+    gap:4px;
+    bottom:29px
+  }
+  .floating-time{
+    font-size:14px;
+    margin-left:0
+  }
+  .access-footer{
+    flex-wrap:wrap
+  }
+  .access-form{
+    padding:35px 12px
+  }
+  .access-copyright{
+    font-size:6px
+  }
+}
+@media(max-width:560px){
+  .topbar{
+    padding:0 20px
+  }
+  .topbar-right{
+    gap:7px
+  }
+  .breadcrumbs>span{
+    display:none
+  }
+  .breadcrumbs>.icon{
+    display:none
+  }
+  .main-content{
+    padding:24px 19px 28px;
+    gap:22px
+  }
+  .footer{
+    padding:17px 19px;
+    font-size:8px
+  }
+  .footer>span:last-child{
+    display:none
+  }
+  .page-heading{
+    gap:12px;
+    flex-wrap:wrap
+  }
+  .page-heading h1{
+    font-size:31px;
+    letter-spacing:-1px
+  }
+  .page-heading p{
+    font-size:11px;
+    line-height:1.8;
+    max-width:320px
+  }
+  .page-heading>.btn{
+    margin-top:1px
+  }
+  .dashboard-actions{
+    grid-template-columns:1fr
+  }
+  .hero-card{
+    min-height:281px;
+    padding:26px 23px
+  }
+  .hero-copy h2{
+    font-size:32px
+  }
+  .hero-copy p{
+    font-size:11px;
+    max-width:200px
+  }
+  .hero-card>.focus-art{
+    width:48%;
+    top:46px;
+    right:-8px;
+    opacity:1
+  }
+  .hero-footnote{
+    max-width:unset;
+    font-size:9px
+  }
+  .hero-copy .eyebrow{
+    font-size:7px
+  }
+  .hero-copy .btn{
+    font-size:11px
+  }
+  .join-card{
+    padding:22px;
+    display:grid;
+    grid-template-columns:33px 1fr;
+    column-gap:13px;
+    row-gap:3px
+  }
+  .join-card>.icon-tile{
+    grid-row:1/3;
+    margin:0
+  }
+  .join-card h2{
+    font-size:23px
+  }
+  .join-card>p{
+    margin:5px 0 13px;
+    font-size:11px
+  }
+  .join-card>p>br{
+    display:none
+  }
+  .join-card form,.join-card>.join-footnote{
+    grid-column:1/-1
+  }
+  .join-card form{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:10px;
+    margin-top:4px
+  }
+  .join-card form>.code-input{
+    height:40px;
+    font-size:12px
+  }
+  .join-card form>.btn{
+    grid-column:2;
+    grid-row:1;
+    gap:14px;
+    padding:9px 12px;
+    white-space:nowrap;
+    height:40px
+  }
+  .join-card form>.field-error{
+    grid-column:1/-1;
+    grid-row:2
+  }
+  .join-footnote{
+    margin-top:9px;
+    font-size:9px
+  }
+  .stats-grid{
+    gap:10px
+  }
+  .stat-card{
+    padding:17px 14px
+  }
+  .stat-label{
+    font-size:10px;
+    gap:5px
+  }
+  .stat-label .icon-tile{
+    width:26px;
+    height:26px;
+    border-radius:7px
+  }
+  .stat-label .icon{
+    width:13px;
+    height:13px
+  }
+  .stat-value{
+    font-size:27px;
+    letter-spacing:-.8px
+  }
+  .stat-card>p{
+    font-size:8px;
+    line-height:1.7
+  }
+  .stat-value small{
+    font-size:12px
+  }
+  .rooms-grid{
+    grid-template-columns:1fr
+  }
+  .room-card{
+    padding:20px 20px 0
+  }
+  .room-card-top{
+    margin-bottom:13px
+  }
+  .room-card-top .icon-tile{
+    width:41px;
+    height:41px
+  }
+  .room-card h3{
+    font-size:16px
+  }
+  .room-config{
+    margin:17px 0;
+    font-size:11px;
+    gap:22px
+  }
+  .room-config .icon{
+    width:14px;
+    height:14px
+  }
+  .room-card-top .badge{
+    font-size:10px
+  }
+  .room-card-footer{
+    padding:14px 0
+  }
+  .room-card-footer .avatar-stack>span:last-child:not(.avatar){
+    font-size:10px
+  }
+  .room-arrow{
+    width:32px;
+    height:32px
+  }
+  .room-arrow .icon{
+    width:15px;
+    height:15px
+  }
+  .section-heading h2{
+    font-size:16px
+  }
+  .section-heading>div>span{
+    font-size:10px
+  }
+  .section-heading .text-link{
+    font-size:10px
+  }
+  .dashboard-bottom .panel{
+    padding:21px 18px
+  }
+  .session-row{
+    gap:10px;
+    padding:14px 0
+  }
+  .session-info strong{
+    font-size:11px
+  }
+  .session-info>span{
+    font-size:9px
+  }
+  .session-goals{
+    font-size:8px;
+    padding:3px 5px
+  }
+  .session-row>.icon{
+    display:none
+  }
+  .weekly-chart{
+    gap:13px;
+    padding:9px 5px 0
+  }
+  .chart-amount{
+    font-size:8px
+  }
+  .filter-tabs{
+    gap:2px
+  }
+  .filter-tabs button{
+    font-size:10px;
+    padding:7px 9px
+  }
+  .list-toolbar{
+    gap:14px
+  }
+  .search-input{
+    width:100%
+  }
+  .search-input input{
+    width:100%
+  }
+  .inline-invite{
+    font-size:11px;
+    gap:10px;
+    padding:17px;
+    flex-wrap:wrap
+  }
+  .inline-invite>a{
+    margin-left:30px
+  }
+  .create-grid{
+    gap:18px
+  }
+  .form-panel{
+    padding:22px 19px;
+    gap:21px
+  }
+  .panel-title h2{
+    font-size:16px
+  }
+  .panel-title p{
+    font-size:10px
+  }
+  .field{
+    font-size:11px
+  }
+  .preset-grid{
+    gap:6px
+  }
+  .preset{
+    padding:13px 9px
+  }
+  .preset strong{
+    font-size:10px
+  }
+  .preset span{
+    font-size:11px
+  }
+  .preset small{
+    font-size:8px;
+    line-height:1.6
+  }
+  .time-fields{
+    gap:12px
+  }
+  .unit-input span{
+    font-size:8px;
+    padding:0 9px
+  }
+  .unit-input input{
+    width:45px;
+    padding:10px
+  }
+  .time-fields>.field{
+    font-size:10px
+  }
+  .time-fields .field>.icon{
+    width:12px;
+    height:12px;
+    margin-right:3px
+  }
+  .cycles-row>div>span{
+    font-size:9px;
+    max-width:170px
+  }
+  .cycles-row strong{
+    font-size:11px
+  }
+  .stepper{
+    gap:0
+  }
+  .stepper button{
+    width:27px;
+    height:29px
+  }
+  .preview-panel{
+    padding:24px
+  }
+  .preview-orbit{
+    min-height:167px
+  }
+  .preview-orbit strong{
+    font-size:36px
+  }
+  .join-page{
+    padding:34px 22px;
+    margin:20px 0
+  }
+  .join-page h1{
+    font-size:31px
+  }
+  .join-page>p{
+    font-size:11px
+  }
+  .join-page .join-note{
+    font-size:8px
+  }
+  .invite-code{
+    padding:8px 12px;
+    margin-top:3px
+  }
+  .invite-code>span{
+    font-size:7px
+  }
+  .invite-code strong{
+    font-size:15px
+  }
+  .participants-panel{
+    padding:23px 19px
+  }
+  .participants-panel .section-heading h2{
+    font-size:14px
+  }
+  .person-details strong{
+    font-size:11px
+  }
+  .person-row{
+    gap:10px
+  }
+  .person-row .badge{
+    font-size:8px
+  }
+  .invite-box{
+    padding:15px;
+    gap:10px
+  }
+  .invite-box .btn{
+    margin:5px 0 0 32px
+  }
+  .lobby-session-config{
+    gap:14px;
+    font-size:9px
+  }
+  .lobby-start{
+    gap:15px
+  }
+  .lobby-start>.btn{
+    width:100%;
+    min-height:44px;
+    font-size:12px
+  }
+  .goals-panel{
+    padding:23px 20px
+  }
+  .goal-row label{
+    font-size:12px
+  }
+  .goal-form input{
+    font-size:11px;
+    padding:9px
+  }
+  .goals-panel>.btn{
+    font-size:12px
+  }
+  .live-layout{
+    gap:20px
+  }
+  .timer-panel{
+    padding:21px 17px;
+    min-height:572px
+  }
+  .timer-top{
+    gap:7px;
+    flex-wrap:wrap
+  }
+  .phase-pill{
+    font-size:10px
+  }
+  .connection-label{
+    font-size:7px
+  }
+  .timer-ring{
+    width:min(100%,300px);
+    margin-top:8px
+  }
+  .timer-center strong{
+    font-size:65px
+  }
+  .timer-panel>h2{
+    font-size:24px
+  }
+  .timer-panel>p{
+    font-size:10px
+  }
+  .timer-controls .btn{
+    font-size:12px;
+    min-width:117px
+  }
+  .live-aside{
+    display:flex;
+    gap:18px
+  }
+  .live-aside .panel{
+    padding:23px 20px
+  }
+  .live-aside .person-details strong{
+    font-size:12px
+  }
+  .live-aside .person-details span{
+    font-size:9px
+  }
+  .live-aside .person-row{
+    gap:11px;
+    padding:15px 0
+  }
+  .live-aside .person-row>.badge{
+    font-size:9px;
+    padding:4px 8px
+  }
+  .live-aside .section-heading h2{
+    font-size:16px
+  }
+  .live-aside .goals-panel>.muted{
+    font-size:11px
+  }
+  .live-aside .goal-row label{
+    font-size:12px
+  }
+  .room-bottom{
+    font-size:10px;
+    gap:18px
+  }
+  .room-bottom>span{
+    font-size:9px
+  }
+  .summary-hero h1{
+    font-size:32px
+  }
+  .summary-hero p{
+    font-size:10px
+  }
+  .summary-hero{
+    padding:15px 0
+  }
+  .summary-stats .stat-card{
+    padding:19px 12px
+  }
+  .summary-stats .stat-value{
+    font-size:25px
+  }
+  .summary-person p{
+    font-size:10px
+  }
+  .summary-person strong{
+    font-size:11px
+  }
+  .summary-person{
+    gap:10px
+  }
+  .summary-layout .panel{
+    padding:23px 20px
+  }
+  .summary-note h2{
+    font-size:27px
+  }
+  .summary-note>p{
+    font-size:12px
+  }
+  .summary-note .btn{
+    font-size:12px
+  }
+  .period-field{
+    margin-left:auto
+  }
+  .history-panel{
+    padding:21px 18px
+  }
+  .history-panel .session-row{
+    gap:10px;
+    padding:18px 0
+  }
+  .history-panel .session-info strong{
+    font-size:11px
+  }
+  .history-panel .session-info>span{
+    font-size:9px
+  }
+  .history-panel .session-goals{
+    font-size:8px
+  }
+  .history-panel .session-date{
+    width:40px;
+    height:45px
+  }
+  .total-focus-banner{
+    padding:21px 18px;
+    gap:12px
+  }
+  .total-focus-banner>.icon-tile{
+    width:41px;
+    height:41px
+  }
+  .total-focus-banner>div>span{
+    font-size:9px
+  }
+  .total-focus-banner strong{
+    font-size:30px
+  }
+  .total-focus-banner>p{
+    display:none
+  }
+  .stats-note{
+    font-size:9px;
+    line-height:1.9;
+    align-items:flex-start
+  }
+  .settings-layout .panel{
+    padding:24px 20px
+  }
+  .profile-preview strong{
+    font-size:16px
+  }
+  .setting-toggle strong{
+    font-size:12px
+  }
+  .setting-toggle small{
+    font-size:10px
+  }
+  .data-note>p{
+    font-size:12px
+  }
+  .empty-state{
+    padding:38px 22px
+  }
+  .access-page{
+    grid-template-columns:1fr;
+    padding:10px;
+    gap:0
+  }
+  .access-story{
+    padding:22px 24px;
+    min-height:350px;
+    border-radius:15px
+  }
+  .access-story>.brand{
+    font-size:23px
+  }
+  .access-story .brand-symbol{
+    width:31px;
+    height:31px
+  }
+  .access-story-content{
+    padding:25px 0 8px;
+    margin:0
+  }
+  .access-story-content h1{
+    font-size:47px;
+    line-height:1.05;
+    letter-spacing:-1.7px;
+    margin-top:14px
+  }
+  .access-story-content h1 br:nth-of-type(2){
+    display:none
+  }
+  .access-story-content h1 em{
+    display:block
+  }
+  .access-story-content>.eyebrow{
+    font-size:6px;
+    letter-spacing:1.3px
+  }
+  .access-story-content>p{
+    font-size:10px;
+    margin-top:14px;
+    max-width:205px
+  }
+  .access-art{
+    width:45%;
+    max-width:200px;
+    position:absolute;
+    right:-5px;
+    bottom:18px;
+    margin:0
+  }
+  .floating-study{
+    display:none
+  }
+  .access-footer{
+    font-size:8px;
+    margin-top:10px
+  }
+  .access-footer .avatar{
+    width:22px;
+    height:22px;
+    font-size:7px
+  }
+  .access-form{
+    padding:34px 20px 57px
+  }
+  .access-form-inner{
+    max-width:370px
+  }
+  .access-form-inner>h2{
+    font-size:30px
+  }
+  .access-form-inner>p{
+    font-size:11px
+  }
+  .access-form-inner .btn{
+    font-size:12px;
+    min-height:46px
+  }
+  .auth-tabs{
+    margin-top:25px;
+    margin-bottom:23px
+  }
+  .auth-tabs button{
+    font-size:12px
+  }
+  .input-icon input{
+    font-size:12px
+  }
+  .access-overline{
+    font-size:7px
+  }
+  .access-copyright{
+    font-size:8px;
+    bottom:16px
+  }
+  .access-form-inner .auth-note{
+    font-size:9px
+  }
+  .remember{
+    font-size:10px
+  }
+  .modal-box{
+    padding:24px 21px
+  }
+  .modal-header h2{
+    font-size:24px
+  }
+}
+@media(max-width:360px){
+  .main-content{
+    padding-left:14px;
+    padding-right:14px
+  }
+  .hero-copy h2{
+    font-size:29px
+  }
+  .hero-card{
+    padding-left:20px
+  }
+  .hero-card>.focus-art{
+    width:45%;
+    top:84px;
+    right:-18px
+  }
+  .hero-footnote{
+    font-size:8px
+  }
+  .stat-card{
+    padding:16px 12px
+  }
+  .stat-label{
+    font-size:9px
+  }
+  .stat-label .icon-tile{
+    width:22px;
+    height:22px
+  }
+  .stat-value{
+    font-size:25px
+  }
+  .preset{
+    padding:11px 7px
+  }
+  .preset small{
+    font-size:7px
+  }
+  .timer-top{
+    justify-content:center
+  }
+  .connection-label{
+    font-size:8px
+  }
+  .session-goals{
+    font-size:7px
+  }
+  .access-story-content h1{
+    font-size:43px
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto
+  }
+  *,*:before,*:after{
+    animation:none!important;
+    transition:none!important
+  }
+}
+@media print{
+  .sidebar,.topbar,.footer,.back-link,.btn,.text-link,.room-bottom{
+    display:none!important
+  }
+  .workspace{
+    margin:0;
+    width:100%
+  }
+  .main-content{
+    padding:0;
+    max-width:none
+  }
+  .panel,.stat-card{
+    break-inside:avoid
+  }
+  .summary-layout{
+    grid-template-columns:1fr
+  }
+  .summary-note{
+    display:none
+  }
+  .app-shell{
+    display:block
+  }
+  body{
+    background:white
+  }
+}
+
+/* ==================== Ajustes finais de tamanho de fonte e contraste ==================== */
+
+.panel, .dashboard-bottom > *, .stats-grid > *, .main-content > * { min-width: 0; }
+.page-heading h1 { overflow-wrap: anywhere; }
+.page-heading p, .hero-copy p, .join-card > p, .access-form-inner > p { font-size: 13px; color: #6c7863; }
+.hero-card { min-height: 300px; }
+.hero-copy p { max-width: 280px; }
+.hero-copy .btn, .join-card .btn, .access-form-inner .btn { font-size: 12px; }
+.hero-footnote, .join-footnote, .preview-note, .gentle-tip, .chart-caption { font-size: 10px; color: #76846a; }
+.nav-item { font-size: 13px; color: #6c7865; }
+.sidebar-section-label { font-size: 9px; color: #7d896f; }
+.sidebar-tip p { font-size: 11px; color: #748267; }
+.sidebar-profile strong { font-size: 12px; }
+.sidebar-profile div > span { font-size: 10px; color: #78856c; }
+.breadcrumbs, .header-date { font-size: 11px; color: #79876c; }
+.breadcrumbs strong { color: #5f7053; }
+.eyebrow { font-size: 9px; color: #617a50; }
+.stat-label { font-size: 12px; color: #69795d; }
+.stat-value { font-size: 30px; }
+.stat-card > p { font-size: 10px; color: #78866c; }
+.stat-value small { color: #7d8c6f; }
+.section-heading h2 { font-size: 17px; }
+.section-heading > div > span, .section-heading .text-link { font-size: 12px; color: #728565; }
+.room-card h3 { font-size: 15px; }
+.room-subject, .room-config { font-size: 11px; color: #78866c; }
+.room-card-top .badge, .person-row .badge { font-size: 10px; }
+.room-card-footer .avatar-stack > span:last-child:not(.avatar) { font-size: 10px; color: #78866c; }
+.badge.neutral { color: #637154; }
+.badge.peach { color: #875a38; }
+.badge.purple { color: #72558b; }
+.session-info strong { font-size: 12px; }
+.session-info > span, .session-goals { font-size: 10px; color: #738365; }
+.session-date small, .chart-column, .chart-amount { font-size: 10px; color: #7b886c; }
+.footer { font-size: 10px; color: #7d896f; }
+.field, .cycles-row strong, .preset strong { font-size: 13px; }
+.field input, .field select, .input-icon > input { font-size: 13px; }
+.field-hint, .preset small, .cycles-row span, .panel-title p { font-size: 11px; color: #7b896d; }
+.preset span { font-size: 13px; }
+.preview-orbit span, .timeline-labels, .preview-details > span, .preview-details strong { font-size: 11px; color: #728263; }
+.back-link, .list-toolbar, .filter-tabs button, .search-input input, .period-field, .period-field select { font-size: 12px; }
+.person-details strong { font-size: 13px; }
+.person-details span, .person-details strong small { font-size: 10px; color: #79876b; }
+.goals-panel > .muted, .goals-empty, .invite-box p, .invite-box strong { font-size: 12px; color: #78866a; }
+.goal-row label, .goal-form input, .goals-panel > .btn { font-size: 12px; }
+.goal-row.done label > span { color: #7b8c6d; }
+.lobby-session-config, .lobby-start > span, .lobby-start .btn, .invite-box .btn { font-size: 11px; }
+.room-bottom > span, .room-bottom > .text-link { font-size: 10px; color: #728365; }
+.room-bottom > .danger-text { color: #af4940; }
+.progress-caption, .group-progress > span { font-size: 11px; color: #758569; }
+.phase-pill, .timer-controls .btn { font-size: 12px; }
+.connection-label { font-size: 9px; color: #77896a; }
+.timer-center > span:last-child, .timer-panel > p { font-size: 12px; color: #768768; }
+.end-session { font-size: 11px; color: #78866c; }
+.live-aside .section-heading h2 { font-size: 16px; }
+.live-aside .person-details strong { font-size: 12px; }
+.live-aside .person-details span, .live-aside .person-row > .badge { font-size: 10px; }
+.activity-panel h3 { font-size: 12px; }
+.activity-panel p, .activity-panel small { font-size: 11px; color: #75876a; }
+.summary-hero p, .summary-person strong, .summary-person p, .summary-note > p, .data-note > p { font-size: 12px; color: #728464; }
+.summary-stats .stat-card > p { font-size: 12px; }
+.setting-toggle strong { font-size: 13px; }
+.setting-toggle small, .stats-note { font-size: 11px; color: #78886b; }
+.access-story-content > p { font-size: 14px; color: #768a65; }
+.access-form-inner > p { color: #77856b; }
+.access-overline { font-size: 9px; color: #7c8a6f; }
+.auth-tabs button { font-size: 13px; color: #7b896c; }
+.remember { font-size: 12px; color: #748466; }
+.auth-divider, .access-form-inner .auth-note, .access-footer, .access-copyright { font-size: 10px; color: #7c8b6f; }
+.access-story-content { padding-bottom: 5px; }
+.access-art { width: 65%; }
+@media (max-width: 1190px) {
+  .stat-label { font-size: 11px; }
+  .stat-card > p { font-size: 9px; }
+  .hero-copy p, .join-card > p { font-size: 12px; }
+  .hero-card { min-height: 315px; }
+  .room-config { font-size: 10px; gap: 9px; }
+  .stat-value { font-size: 28px; }
+  .hero-card > .focus-art { top: 100px; }
+}
+@media (max-width: 960px) {
+  .hero-copy p { max-width: 180px; }
+  .hero-card > .focus-art { top: 130px; }
+  .room-card h3 { font-size: 14px; }
+  .stat-label { font-size: 12px; }
+  .stat-card > p { font-size: 10px; }
+  .access-story-content > p { font-size: 12px; }
+  .hero-footnote { font-size: 9px; }
+  .access-art { width: 95%; }
+}
+@media (max-width: 560px) {
+  .hero-card { min-height: 305px; }
+  .hero-copy p { max-width: 190px; }
+  .hero-card > .focus-art { top: auto; bottom: 55px; width: 33%; right: 3px; }
+  .hero-footnote { font-size: 9px; }
+  .stat-label { font-size: 11px; }
+  .stat-card > p { font-size: 10px; }
+  .room-card h3 { font-size: 16px; }
+  .room-config { font-size: 12px; gap: 17px; }
+  .section-heading .text-link { font-size: 11px; }
+  .session-info strong, .session-goals { font-size: 11px; }
+  .session-goals { font-size: 9px; }
+  .person-details span { font-size: 10px; }
+  .connection-label { font-size: 8px; }
+  .preset strong { font-size: 11px; }
+  .preset small { font-size: 10px; }
+  .time-fields > .field { font-size: 12px; }
+  .cycles-row span { font-size: 10px; }
+  .unit-input span { font-size: 10px; }
+  .access-story-content > p { font-size: 11px; max-width: 205px; }
+  .access-art { width: 40%; }
+  .access-story-content > .eyebrow { font-size: 7px; }
+  .page-heading .btn { font-size: 12px; }
+  .invite-code > span { font-size: 9px; }
+  .join-footnote { font-size: 10px; }
+  .search-input { min-height: 42px; }
+  .btn, .goal-form .icon-btn, .room-arrow { min-height: 40px; }
+  .room-arrow { min-width: 40px; }
+}
+@media (max-width: 380px) {
+  .dashboard-bottom .section-heading h2 { font-size: 15px; }
+  .dashboard-bottom .section-heading .text-link { font-size: 10px; }
+  .chart-amount { font-size: 8px; }
+  .weekly-chart { gap: 9px; }
+  .chart-caption { font-size: 9px; }
+}
