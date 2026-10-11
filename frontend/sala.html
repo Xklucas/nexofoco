@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoFoco · Sala de estudo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <!-- Barra lateral: igual em todas as páginas, muda só o item marcado com a classe active -->
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html" aria-label="NexoFoco, início"><span class="brand-symbol"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 26V10h5l10 16V10h5v16h-5L13 10v16" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><circle cx="29" cy="6" r="2.5" fill="#eda77e"/></svg></span><span>Nexo<span class="brand-focus">Foco</span><span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegação principal">
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Visão geral</span></a>
+        <a class="nav-item active" href="salas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Minhas salas</span><span class="nav-count">3</span></a>
+        <a class="nav-item" href="historico.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.7-6.4L3 8m0-5v5h5m4-1v5l3 2"/></svg><span>Histórico</span></a>
+        <a class="nav-item" href="estatisticas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></svg><span>Estatísticas</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="nav-item" href="configuracoes.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg><span>Configurações</span></a>
+        <button class="nav-item" id="botao-ajuda"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4m0 3h.01"/></svg><span>Ajuda e sobre</span></button>
+        <div class="sidebar-profile">
+          <span class="avatar green perfil-avatar">LG</span>
+          <div><strong class="perfil-nome">Lucas Góes</strong></div>
+          <a class="icon-btn" href="index.html" aria-label="Sair da conta"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H4V3h5m5 5 4 4-4 4m-6-4h12"/></svg></a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          <button class="icon-btn mobile-menu" id="botao-menu" aria-label="Abrir navegação"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+        <div class="topbar-right">
+          <a href="configuracoes.html" class="profile-link" aria-label="Meu perfil"><span class="avatar small green perfil-avatar">LG</span></a>
+        </div>
+      </header>
+
+      <main class="main-content" id="conteudo" tabindex="-1">
+        <a href="salas.html" class="back-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg>Minhas salas</a>
+
+        <!-- Nome, tema, código e tempos são trocados por sala.js de acordo com a sala aberta -->
+        <div class="page-heading">
+          <div><h1 id="nome-sala">Revisão de Cálculo II</h1><p id="tema-sala">Matemática</p></div>
+          <div class="invite-code"><span>CÓDIGO DA SALA</span><strong id="codigo-sala">NX4K7Q</strong></div>
+        </div>
+
+        <!-- ===================== LOBBY: antes de a sessão começar ===================== -->
+        <div class="lobby-layout" id="tela-lobby">
+          <section class="panel participants-panel">
+            <div class="section-heading"><h2>Participantes</h2><span class="badge neutral">3 presentes</span></div>
+            <div class="person-row">
+              <div class="person-avatar"><span class="avatar green perfil-avatar">LG</span><i class="presence-dot"></i></div>
+              <div class="person-details"><strong>Lucas Góes<small> (você)</small></strong><span>Anfitrião</span></div>
+              <span class="badge peach" id="meu-status">Preparando</span>
+            </div>
+            <div class="person-row">
+              <div class="person-avatar"><span class="avatar peach">OB</span><i class="presence-dot"></i></div>
+              <div class="person-details"><strong>Otávio Bitencourt</strong><span>Participante</span></div>
+              <span class="badge green">Pronto</span>
+            </div>
+            <div class="person-row">
+              <div class="person-avatar"><span class="avatar purple">MD</span><i class="presence-dot"></i></div>
+              <div class="person-details"><strong>Mateus Dias</strong><span>Participante</span></div>
+              <span class="badge green">Pronto</span>
+            </div>
+            <div class="invite-box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><strong>Convide seu grupo</strong><p>Compartilhe o código <strong id="codigo-convite">NX4K7Q</strong> com quem vai estudar com você.</p></div></div>
+            <div class="lobby-session-config">
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><strong id="config-foco">25 min</strong> de foco</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5Zm12 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2"/></svg><strong id="config-intervalo">5 min</strong> de intervalo</span>
+              <span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.7-6.4L3 8m0-5v5h5m4-1v5l3 2"/></svg><strong id="config-ciclos">4</strong> ciclos</span>
+            </div>
+            <div class="lobby-start">
+              <span><i class="dot green"></i><span id="contagem-prontos">2 de 3 pessoas prontas</span></span>
+              <button class="btn btn-primary" id="botao-comecar" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 4 12 8-12 8Z"/></svg>Começar a sessão</button>
+            </div>
+          </section>
+          <aside class="panel goals-panel">
+            <div class="section-heading"><h2>Minhas metas</h2><span class="badge neutral contagem-metas">0/1</span></div>
+            <!-- As metas são criadas pelo JavaScript a partir da lista "metas" (sala.js) -->
+            <div class="goal-list" id="metas-lobby"></div>
+            <form class="goal-form" id="form-meta-lobby" novalidate>
+              <label class="sr-only" for="nova-meta-lobby">Nova meta de estudo</label>
+              <input id="nova-meta-lobby" placeholder="Adicionar uma meta..." maxlength="150">
+              <button class="icon-btn" type="submit" aria-label="Adicionar meta"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </form>
+            <span class="field-error" id="erro-meta-lobby"></span>
+            <button class="btn btn-primary full" id="botao-pronto"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span id="texto-pronto">Estou pronto</span></button>
+          </aside>
+        </div>
+        <div class="room-bottom" id="rodape-lobby"><button class="text-link danger-text botao-sair">Sair da sala<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H4V3h5m5 5 4 4-4 4m-6-4h12"/></svg></button></div>
+
+        <!-- ===================== SESSÃO AO VIVO: aparece ao clicar em "Começar a sessão" ===================== -->
+        <div class="live-layout escondido" id="tela-ao-vivo">
+          <section class="timer-panel panel">
+            <div class="timer-top">
+              <span class="phase-pill"><svg class="icon" id="icone-foco" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3S3 3 3 14a7 7 0 0 0 12 4c5-5 5-15 5-15ZM4 21 15 10"/></svg><svg class="icon escondido" id="icone-intervalo" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5Zm12 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2"/></svg><span id="texto-fase">Foco</span></span>
+              <span class="connection-label"><i class="dot green"></i>Conectado à sala</span>
+            </div>
+            <div class="timer-ring">
+              <!-- Anel do cronômetro: o JavaScript muda o stroke-dashoffset para mostrar o tempo que falta -->
+              <svg viewBox="0 0 320 320" aria-hidden="true"><circle class="ring-track" cx="160" cy="160" r="143"/><circle class="ring-progress" id="anel" cx="160" cy="160" r="143"/></svg>
+              <div class="timer-center">
+                <span class="timer-phase" id="fase-relogio">FOCO</span>
+                <strong id="relogio">25:00</strong>
+                <span id="texto-ciclo">Ciclo 1 de 4</span>
+              </div>
+            </div>
+            <div class="cycle-dots" id="bolinhas-ciclos"></div>
+            <div class="timer-controls" id="controles">
+              <button class="btn btn-primary" id="botao-pausar"><svg class="icon" id="icone-pausar" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="icon escondido" id="icone-retomar" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 4 12 8-12 8Z"/></svg><span id="texto-pausar">Pausar</span></button>
+              <button class="btn btn-outline" id="botao-pular"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 10 7-10 7Zm14 0v14"/></svg>Pular fase</button>
+            </div>
+            <button class="text-link end-session" id="botao-encerrar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>Encerrar sessão</button>
+          </section>
+          <aside class="live-aside">
+            <section class="panel goals-panel">
+              <div class="section-heading"><h2>Minhas metas</h2><span class="badge neutral contagem-metas">0/1</span></div>
+              <div class="goal-list" id="metas-ao-vivo"></div>
+              <form class="goal-form" id="form-meta-ao-vivo" novalidate>
+                <label class="sr-only" for="nova-meta-ao-vivo">Nova meta de estudo</label>
+                <input id="nova-meta-ao-vivo" placeholder="Adicionar uma meta..." maxlength="150">
+                <button class="icon-btn" type="submit" aria-label="Adicionar meta"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </form>
+              <span class="field-error" id="erro-meta-ao-vivo"></span>
+              <div class="progress-track"><div id="barra-metas"></div></div>
+              <span class="progress-caption" id="legenda-metas">0 de 1 metas concluídas</span>
+            </section>
+            <section class="panel">
+              <div class="section-heading"><h2>Participantes</h2><span class="badge neutral">3</span></div>
+              <div class="person-row">
+                <div class="person-avatar"><span class="avatar green perfil-avatar">LG</span><i class="presence-dot"></i></div>
+                <div class="person-details"><strong>Lucas Góes<small> (você)</small></strong><span id="meu-papel">Anfitrião · 0/1 metas</span></div>
+                <span class="badge green">Presente</span>
+              </div>
+              <div class="person-row">
+                <div class="person-avatar"><span class="avatar peach">OB</span><i class="presence-dot"></i></div>
+                <div class="person-details"><strong>Otávio Bitencourt</strong><span>Participante · 0/1 metas</span></div>
+                <span class="badge green">Presente</span>
+              </div>
+              <div class="person-row">
+                <div class="person-avatar"><span class="avatar purple">MD</span><i class="presence-dot"></i></div>
+                <div class="person-details"><strong>Mateus Dias</strong><span>Participante · 0/1 metas</span></div>
+                <span class="badge green">Presente</span>
+              </div>
+              <div class="group-progress"><span>Metas do grupo<strong id="metas-grupo">0 / 3</strong></span></div>
+            </section>
+            <!-- Cada acontecimento da sessão vira um parágrafo novo aqui (sala.js → registrarAtividade) -->
+            <section class="activity-panel">
+              <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-11 12a2 2 0 0 0 4 0"/></svg>Atividade</h3>
+              <div id="lista-atividades"></div>
+            </section>
+          </aside>
+        </div>
+        <div class="room-bottom escondido" id="rodape-ao-vivo"><button class="text-link danger-text botao-sair">Sair da sala<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H4V3h5m5 5 4 4-4 4m-6-4h12"/></svg></button></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Janela "Ajuda e sobre": aparece quando comum.js remove a classe escondido -->
+  <div class="modal escondido" id="modal-ajuda">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Como funciona</h2>
+        <button class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+      </div>
+      <ol class="help-steps">
+        <li>Crie uma sala e defina os tempos.</li>
+        <li>Compartilhe o código com o grupo.</li>
+        <li>Adicione metas e marque que está pronto.</li>
+        <li>Consulte o resumo ao final.</li>
+      </ol>
+      <p class="muted">Projeto acadêmico INF321<br>Otávio Silva Bitencourt · Mateus José Dias · Lucas Carvalho de Góes</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline fechar-modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== JANELAS DE CONFIRMAÇÃO ===================== -->
+  <div class="modal escondido" id="modal-pular">
+    <div class="modal-box">
+      <div class="modal-header"><h2>Avançar para a próxima fase?</h2><button class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <p>Um foco pulado não conta como ciclo completo.</p>
+      <div class="modal-actions"><button class="btn btn-outline fechar-modal">Voltar</button><button class="btn btn-primary" id="confirmar-pular">Avançar fase</button></div>
+    </div>
+  </div>
+
+  <!-- Ao confirmar, este formulário leva os resultados para resumo.html (na URL, como um formulário GET) -->
+  <div class="modal escondido" id="modal-encerrar">
+    <form class="modal-box" id="form-resumo" action="resumo.html" method="get">
+      <div class="modal-header"><h2 id="titulo-encerrar">Encerrar a sessão do grupo?</h2><button type="button" class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <p id="texto-encerrar">O progresso será salvo no histórico de todos.</p>
+      <!-- Campos invisíveis: sala.js coloca os valores antes do envio -->
+      <input type="hidden" name="nome" id="resumo-nome">
+      <input type="hidden" name="data" value="Hoje">
+      <input type="hidden" name="motivo" id="resumo-motivo" value="encerrada">
+      <input type="hidden" name="foco" id="resumo-foco">
+      <input type="hidden" name="duracao" id="resumo-duracao">
+      <input type="hidden" name="ciclos" id="resumo-ciclos">
+      <input type="hidden" name="planejados" id="resumo-planejados">
+      <input type="hidden" name="puladas" id="resumo-puladas">
+      <div class="modal-actions"><button type="button" class="btn btn-outline fechar-modal">Voltar</button><button type="submit" class="btn btn-danger">Encerrar e salvar</button></div>
+    </form>
+  </div>
+
+  <div class="modal escondido" id="modal-sair">
+    <div class="modal-box">
+      <div class="modal-header"><h2>Sair da sala?</h2><button class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <p>Você pode voltar pelo código da sala.</p>
+      <div class="modal-actions"><button class="btn btn-outline fechar-modal">Voltar</button><a class="btn btn-primary" href="dashboard.html">Sair da sala</a></div>
+    </div>
+  </div>
+
+  <script src="js/comum.js"></script>
+  <script src="js/sala.js"></script>
+</body>
+</html>

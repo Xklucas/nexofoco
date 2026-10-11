@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoFoco · Criar sala</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="app-shell">
+    <!-- Barra lateral: igual em todas as páginas, muda só o item marcado com a classe active -->
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html" aria-label="NexoFoco, início"><span class="brand-symbol"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M8 26V10h5l10 16V10h5v16h-5L13 10v16" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><circle cx="29" cy="6" r="2.5" fill="#eda77e"/></svg></span><span>Nexo<span class="brand-focus">Foco</span><span class="brand-dot">.</span></span></a>
+      <nav aria-label="Navegação principal">
+        <a class="nav-item" href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Visão geral</span></a>
+        <a class="nav-item active" href="salas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Minhas salas</span><span class="nav-count">3</span></a>
+        <a class="nav-item" href="historico.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.7-6.4L3 8m0-5v5h5m4-1v5l3 2"/></svg><span>Histórico</span></a>
+        <a class="nav-item" href="estatisticas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18M7 16v-4m5 4V7m5 9v-6"/></svg><span>Estatísticas</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="nav-item" href="configuracoes.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3Z"/><circle cx="12" cy="12" r="3"/></svg><span>Configurações</span></a>
+        <button class="nav-item" id="botao-ajuda"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4m0 3h.01"/></svg><span>Ajuda e sobre</span></button>
+        <div class="sidebar-profile">
+          <span class="avatar green perfil-avatar">LG</span>
+          <div><strong class="perfil-nome">Lucas Góes</strong></div>
+          <a class="icon-btn" href="index.html" aria-label="Sair da conta"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H4V3h5m5 5 4 4-4 4m-6-4h12"/></svg></a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          <button class="icon-btn mobile-menu" id="botao-menu" aria-label="Abrir navegação"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+        <div class="topbar-right">
+          <a href="configuracoes.html" class="profile-link" aria-label="Meu perfil"><span class="avatar small green perfil-avatar">LG</span></a>
+        </div>
+      </header>
+
+      <main class="main-content" id="conteudo" tabindex="-1">
+        <a href="salas.html" class="back-link"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg>Minhas salas</a>
+        <div class="page-heading"><div><h1>Criar sala</h1></div></div>
+
+        <!-- Validado por criar.js. Os campos com name vão na URL: sala.html?nome=...&tema=...&foco=...&intervalo=...&ciclos=... -->
+        <form id="form-criar" class="create-grid" action="sala.html" method="get" novalidate>
+          <section class="panel form-panel">
+            <div class="panel-title"><span class="icon-tile green"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h2>Sala</h2></div></div>
+            <label class="field">Nome da sala
+              <input id="nome-sala" name="nome" placeholder="Ex.: Revisão de Cálculo II" maxlength="70">
+              <span class="field-error" id="erro-nome"></span>
+            </label>
+            <label class="field">Tema de estudo
+              <select id="tema-sala" name="tema">
+                <option>Estudo em grupo</option>
+                <option>Matemática</option>
+                <option>Computação</option>
+                <option>Leitura</option>
+                <option>Preparação para provas</option>
+                <option>Idiomas</option>
+              </select>
+            </label>
+            <hr>
+            <div><h2>Ritmo</h2></div>
+            <div class="preset-grid">
+              <button type="button" class="preset selected"><strong>Clássico</strong><span>25 / 5 min</span></button>
+              <button type="button" class="preset"><strong>Foco profundo</strong><span>50 / 10 min</span></button>
+              <button type="button" class="preset"><strong>Sem pressa</strong><span>45 / 15 min</span></button>
+            </div>
+            <div class="time-fields">
+              <label class="field"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>Tempo de foco<div class="unit-input"><input id="foco" name="foco" type="number" min="1" max="120" value="25"><span>minutos</span></div></label>
+              <label class="field"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5Zm12 1h2a3 3 0 0 1 0 6h-2M7 3v2m4-2v2m4-2v2"/></svg>Tempo de intervalo<div class="unit-input"><input id="intervalo" name="intervalo" type="number" min="1" max="30" value="5"><span>minutos</span></div></label>
+            </div>
+            <div class="cycles-row">
+              <div><strong>Ciclos</strong></div>
+              <div class="stepper">
+                <button type="button" id="menos-ciclos" aria-label="Diminuir ciclos">−</button>
+                <span id="contador-ciclos">4</span>
+                <button type="button" id="mais-ciclos" aria-label="Aumentar ciclos">+</button>
+              </div>
+              <!-- Campo invisível: guarda o número de ciclos para ser enviado junto com o formulário -->
+              <input type="hidden" id="ciclos" name="ciclos" value="4">
+            </div>
+            <span class="field-error" id="erro-tempos"></span>
+          </section>
+
+          <aside class="panel preview-panel">
+            <span class="eyebrow">PRÉVIA</span>
+            <div>
+              <div class="preview-orbit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><strong id="previa-total">1h 55min</strong><span>no total</span></div>
+              <!-- Os blocos de foco e intervalo são criados pelo JavaScript -->
+              <div class="timeline" id="linha-do-tempo"></div>
+              <div class="timeline-labels">
+                <span><i class="dot green"></i><span id="previa-focos">4 focos de 25 min</span></span>
+                <span><i class="dot peach"></i><span id="previa-intervalos">3 intervalos de 5 min</span></span>
+              </div>
+              <hr>
+              <div class="preview-details"><span>Tempo total de foco<strong id="previa-foco-total">1h 40min</strong></span></div>
+            </div>
+            <button class="btn btn-primary full" type="submit">Criar sala<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></button>
+          </aside>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <!-- Janela "Ajuda e sobre": aparece quando comum.js remove a classe escondido -->
+  <div class="modal escondido" id="modal-ajuda">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Como funciona</h2>
+        <button class="icon-btn fechar-modal" aria-label="Fechar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+      </div>
+      <ol class="help-steps">
+        <li>Crie uma sala e defina os tempos.</li>
+        <li>Compartilhe o código com o grupo.</li>
+        <li>Adicione metas e marque que está pronto.</li>
+        <li>Consulte o resumo ao final.</li>
+      </ol>
+      <p class="muted">Projeto acadêmico INF321<br>Otávio Silva Bitencourt · Mateus José Dias · Lucas Carvalho de Góes</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline fechar-modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/comum.js"></script>
+  <script src="js/criar.js"></script>
+</body>
+</html>
